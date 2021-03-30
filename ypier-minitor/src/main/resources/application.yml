@@ -1,0 +1,8 @@
+server:
+  port: 5128
+
+spring:
+  security:
+    user:
+      name: ypier
+      password: 123456

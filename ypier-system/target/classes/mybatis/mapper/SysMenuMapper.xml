@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ypier.mapper.SysMenuMapper">
+    
+    <resultMap id="MenuMap" type="cn.ypier.pojo.SysMenu">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="title" property="title" />
+        <result column="level" property="level" />
+        <result column="sort" property="sort" />
+        <result column="name" property="name" />
+        <result column="icon" property="icon" />
+        <result column="create_time" property="create_time" />
+        <result column="update_time" property="update_time" />
+    </resultMap>
+
+    <insert id="insertMenu" >
+        insert into sys_menu
+        (parent_id,title,level,sort,name,icon,hidden,create_time,update_time)
+        values
+        (#{parentId},#{title},#{level},#{sort},#{name},#{icon},#{hidden},now(),now())
+    </insert>
+
+    <select id="selectMenus" resultMap="MenuMap">
+        select * from sys_menu where parent_id = #{parentId} ;
+    </select>
+    
+    <select id="selectAll" resultMap="MenuMap">
+        select * from sys_menu;
+    </select>
+</mapper>

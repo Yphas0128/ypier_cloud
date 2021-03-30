@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ypier-pojo-api" />
+        <module name="ypier-portal" />
+        <module name="ypier-gateway" />
+        <module name="ypier-netty" />
+        <module name="ypier-sqlserver" />
+        <module name="ypier-security" />
+        <module name="ypier-common-util" />
+        <module name="ypier-common-verify" />
+        <module name="ypier-common-api" />
+        <module name="ypier-auth" />
+        <module name="ypier-mbg" />
+        <module name="ypier-system" />
+        <module name="ypier-minitor" />
+        <module name="ypier-minio" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ypier-api" target="1.5" />
+      <module name="ypier-common-client" target="1.5" />
+      <module name="ypier-common-result" target="1.5" />
+      <module name="ypier-data-validate" target="1.5" />
+      <module name="ypier-ouath-auth" target="8" />
+      <module name="ypier-pojo-api" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+server:
+  port: 5129
+
+spring:
+  application:
+    name: ypier-sqlserver
+
+  datasource:
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    url: jdbc:sqlserver://172.30.18.164:1433;DatabaseName=ecology
+#    username: sa
+#    password: xiaoyatou
+
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.1.197:1433;DatabaseName=ecology
+    username: dzyfxt
+    password: xiaoyatou755D
+
+
+
+
+
+# mybatis
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml  # 配置打印sql
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

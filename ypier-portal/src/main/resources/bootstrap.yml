@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: ypier-portal
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+        file-extension: yaml
+      discovery:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+
+seata:
+  enabled: true
+  enable-auto-data-source-proxy: true
+  tx-service-group: my_test_tx_group
+  #  service:
+  #    vgroup-mapping:
+  #      my_test_tx_group: default
+  #    disable-global-transaction: false
+  config:
+    type: nacos
+    nacos:
+      server-addr: 172.30.3.215:8848
+      group: SEATA_GROUP
+      namespace: ${nacos.namespace}
+  registry:
+    type: nacos
+    nacos:
+      server-addr: 172.30.3.215:8848
+      group: SEATA_GROUP
+      namespace: ${nacos.namespace}
+
+
+nacos:
+  addr: 172.30.3.215:8848
+  namespace: 5f43f379-0525-4f53-b891-dc9cea575145
+
+

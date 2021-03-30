@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: ypier-sqlserver
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+        file-extension: yaml
+      discovery:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+
+nacos:
+  addr: 172.30.3.215:8848
+  namespace: 5f43f379-0525-4f53-b891-dc9cea575145
+#  addr: 118.25.79.235:8848
+#  namespace: 58a8199e-e4e5-489f-8c7d-53211d5828fe
+
+
+
+
+
+
+
+#error:
+#  path: /zuulError
+

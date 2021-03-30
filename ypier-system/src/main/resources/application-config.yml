@@ -1,0 +1,186 @@
+producttypes:
+  name:
+    - BCM
+    - 玻璃升降模块
+    - 网关
+    - 座椅加热模块
+    - 电子模块
+    - 电磁扼流圈
+    - 1V1R
+    - T-BOX
+    - 电子排挡（ETRS）
+    - 顶灯总成
+    - 空调控制器
+    - 中控面板
+    - 双联屏
+    - 中控大屏
+    - 液晶仪表
+    - 疲劳驾驶预警（DMS）
+    - 域控制器
+    - 摄像头
+    - 雷达
+    - 电子油泵
+    - 热管理（TMS）
+    - 直流电压转换器（DC/DC）
+    - 车载充电模块（OBC）
+    - 其他辅助开关
+    - 启停开关
+    - 堵盖
+    - 后备箱/尾门开关
+    - 警告灯开关
+    - 中控锁开关
+    - 电子驻车开关
+    - IP板按键开关/组
+    - 后视镜开关
+    - 组合开关
+    - 座椅调节开关
+    - 灯光控制开关
+    - 方向盘开关
+    - 电动窗开关
+
+cartypes:
+  name:
+    - 皮卡
+    - CUV
+    - 跑车
+    - 新能源汽车
+    - CDV
+    - MPV
+    - SUV
+    - 轿车
+
+projectgrades:
+  name:
+    - 一级
+    - 二级
+    - 三级
+    - 四级
+
+urgentdegrees:
+  name:
+    - 正常
+    - 重要
+    - 紧急
+
+productgroups:
+  name:
+    - 模块
+    - 汽车电子电器开关
+    - 新能源汽车电子系统
+    - 主动安全系统
+    - 智能座舱系统
+
+productstates:
+  name:
+    - 在研
+    - 暂停
+    - 取消
+
+developnatures:
+  name:
+    - 全新开发
+    - 局部开发
+    - 完全借用
+
+productlevels:
+  name:
+    - 总成
+    - 子总成
+    - 虚拟总成
+
+productionimporttypes:
+  name:
+    - 正常
+    - 异常
+
+productiondelivers:
+  name:
+    - OEM
+    - Tier1
+    - TierX
+
+companys:
+  companylist:
+    - {company: "诺博汽车系统有限公司",name: "诺博汽车"}
+    - {company: "广汽菲亚特克莱斯勒汽车有限公司",name: "广汽菲克"}
+    - {company: "延锋汽车智能安全系统有限责任公司",name: "延锋汽车智能"}
+    - {company: "Jaguar Land Rover Limited",name: "捷豹路虎全球"}
+    - {company: "Tesla Inc",name: "特斯拉"}
+    - {company: "重庆长安新能源汽车有限公司",name: "长安新能源"}
+    - {company: "重庆长安铃木汽车有限公司",name: "长安铃木"}
+    - {company: "广汽新能源汽车有限公司",name: "广汽新能源"}
+    - {company: "Daimler AG",name: "戴姆勒"}
+    - {company: "爱驰汽车有限公司",name: "爱驰汽车"}
+    - {company: "重庆力帆汽车有限公司",name: "重庆力帆"}
+    - {company: "重庆比速汽车有限公司",name: "重庆比速"}
+    - {company: "众泰汽车股份有限公司",name: "众泰汽车"}
+    - {company: "郑州日产汽车有限公司",name: "郑州日产"}
+    - {company: "长城汽车股份有限公司",name: "长城汽车"}
+    - {company: "北京长城华冠汽车科技股份有限公司",name: "长城华冠"}
+    - {company: "重庆长安欧尚汽车有限公司",name: "长安欧尚"}
+    - {company: "重庆长安汽车股份有限公司",name: "长安汽车"}
+    - {company: "长安福特汽车有限公司",name: "长安福特"}
+    - {company: "天津一汽夏利汽车股份有限公司",name: "一汽夏利"}
+    - {company: "一汽解放汽车有限公司",name: "一汽解放"}
+    - {company: "一汽轿车股份有限公司",name: "一汽轿车"}
+    - {company: "中国第一汽车股份有限公司红旗分公司",name: "一汽红旗"}
+    - {company: "中国第一汽车股份有限公司",name: "一汽股份"}
+    - {company: "一汽-大众汽车有限公司",name: "一汽大众"}
+    - {company: "一汽奔腾轿车有限公司",name: "一汽奔腾"}
+    - {company: "广州小鹏汽车科技有限公司",name: "小鹏汽车"}
+    - {company: "SEAT, S.A.",name: "西雅特公司"}
+    - {company: "Volvo Car Corporation",name: "沃尔沃汽车"}
+    - {company: "上海蔚来汽车有限公司",name: "蔚来汽车"}
+    - {company: "深圳市宝能汽车有限公司",name: "深圳宝能"}
+    - {company: "上海申沃客车有限公司",name: "申沃客车"}
+    - {company: "上海捷能汽车技术有限公司",name: "上汽新能源"}
+    - {company: "上汽通用五菱汽车股份有限公司",name: "上汽通用五菱"}
+    - {company: "上汽通用汽车有限公司",name: "上汽通用"}
+    - {company: "上汽大众汽车有限公司",name: "上汽大众"}
+    - {company: "上汽大通汽车有限公司",name: "上汽大通"}
+    - {company: "上海汽车集团股份有限公司",name: "上汽乘用车"}
+    - {company: "奇瑞上海技术中心",name: "上海奇瑞"}
+    - {company: "爱驰汽车（上海）有限公司",name: "上海爱驰"}
+    - {company: "奇瑞新能源汽车股份有限公司",name: "奇瑞新能源"}
+    - {company: "奇瑞商用车（安徽）有限公司",name: "奇瑞商用车"}
+    - {company: "奇瑞汽车股份有限公司",name: "奇瑞汽车"}
+    - {company: "奇瑞捷豹路虎汽车有限公司",name: "奇瑞捷豹路虎"}
+    - {company: "宜宾凯翼汽车有限公司",name: "凯翼汽车"}
+    - {company: "重庆金康赛力斯新能源汽车设计院有限公司",name: "金康新能源"}
+    - {company: "江铃汽车股份有限公司",name: "江铃汽车"}
+    - {company: "安徽江淮汽车集团股份有限公司",name: "江淮汽车"}
+    - {company: "集瑞联合重工有限公司",name: "集瑞联合重工"}
+    - {company: "浙江吉利汽车零部件采购有限公司",name: "吉利汽车"}
+    - {company: "华人运通（江苏）技术有限公司",name: "华人运通"}
+    - {company: "Hyundai Motor Group",name: "韩国现代"}
+    - {company: "广汽三菱汽车有限公司",name: "广汽三菱"}
+    - {company: "广汽蔚来新能源汽车科技有限公司",name: "广汽蔚来"}
+    - {company: "广汽丰田汽车有限公司",name: "广汽丰田"}
+    - {company: "广汽乘用车有限公司",name: "广汽乘用车"}
+    - {company: "广汽本田汽车有限公司",name: "广汽本田"}
+    - {company: "观致汽车有限公司",name: "观致汽车"}
+    - {company: "东风悦达起亚汽车有限公司",name: "东风悦达起亚"}
+    - {company: "东风裕隆汽车有限公司",name: "东风裕隆"}
+    - {company: "东风小康汽车有限公司重庆分公司",name: "东风小康"}
+    - {company: "东风柳州汽车有限公司",name: "东风柳汽"}
+    - {company: "东风汽车集团股份有限公司乘用车公司",name: "东风乘用车"}
+    - {company: "岚图汽车科技有限公司",name: "岚图汽车"}
+    - {company: "Volkswagen Aktienges",name: "德国大众"}
+    - {company: "Neovia Logistics Ger",name: "德国奥迪"}
+    - {company: "江苏金坛汽车工业有限公司",name: "大乘汽车"}
+    - {company: "北京车和家信息技术有限公司",name: "车和家"}
+    - {company: "南京博郡新能源汽车有限公司",name: "博郡汽车"}
+    - {company: "比亚迪汽车工业有限公司",name: "比亚迪"}
+    - {company: "北京汽车集团越野车有限公司",name: "北汽越野车"}
+    - {company: "北汽银翔汽车有限公司",name: "北汽银翔"}
+    - {company: "北京新能源汽车股份有限公司",name: "北汽新能源"}
+    - {company: "北京汽车股份有限公司",name: "北汽股份"}
+    - {company: "北汽福田汽车股份有限公司",name: "北汽福田"}
+    - {company: "江西昌河汽车有限责任公司",name: "江西昌河"}
+    - {company: "北京现代汽车有限公司",name: "北京现代"}
+    - {company: "北京宝沃汽车股份有限公司",name: "宝沃汽车"}
+    - {company: "GM de Mexico S.de R.",name: "墨西哥通用"}
+    - {company: "General Motors LLC",name: "美国通用"}
+    - {company: "GM Korea Company",name: "韩国通用"}
+    - {company: "General Motors do Br",name: "巴西通用"}
+    - {company: "GM Holden Ltd.",name: "澳大利亚通用"}

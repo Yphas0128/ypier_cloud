@@ -1,0 +1,22 @@
+server:
+  port: 9401
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  # redis 配置
+  redis:
+    database: 0
+    host: 172.30.3.212
+    port: 7006
+
+# admin 监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

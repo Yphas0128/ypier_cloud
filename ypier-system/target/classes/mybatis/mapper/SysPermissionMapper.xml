@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ypier.mapper.SysPermissionMapper">
+
+
+    <select id="selectPermissionList" resultType="cn.ypier.pojo.SysPermission">
+        SELECT p.* FROM sys_permission p
+		LEFT JOIN sys_role_permission_relation rp on rp.permission_id = p.id
+		LEFT JOIN sys_user_role_relation ur on rp.role_id = ur.role_id
+		WHERE ur.user_id = #{id}
+    </select>
+
+
+
+    <resultMap id="permissionRoleResultMap" type="cn.ypier.dto.PermissionRoleDto">
+        <id column="id" property="id" />
+        <result column="url" property="url" />
+        <collection property="roles" column="id" ofType="cn.ypier.pojo.SysRole">
+            <result property="name" column="name" />
+        </collection>
+    </resultMap>
+
+    <select id="permissionListRole" resultMap="permissionRoleResultMap">
+        SELECT p.id,p.url,r.name FROM  sys_permission p
+        LEFT JOIN sys_role_permission_relation rp on rp.permission_id = p.id
+        LEFT JOIN sys_role r on r.id = rp.role_id
+    </select>
+
+</mapper>

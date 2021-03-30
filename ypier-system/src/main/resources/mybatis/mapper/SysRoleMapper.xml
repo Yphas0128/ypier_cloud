@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ypier.mapper.SysRoleMapper">
+
+
+
+    <insert id="insertRole" >
+        insert  into sys_role
+        (name,description,admin_count,status,create_time)
+        values
+        (#{name},#{description},#{admin_count},#{status},now())
+    </insert>
+
+    <select id="listRole" resultType="cn.ypier.pojo.SysRole">
+        select  * from  sys_role  where status = 1 limit #{page},#{size}
+    </select>
+</mapper>

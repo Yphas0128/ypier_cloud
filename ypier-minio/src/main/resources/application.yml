@@ -1,0 +1,5 @@
+min:
+  io:
+    endpoint: http://172.30.3.213
+    accessKey: minioadmin
+    secretKey: minioadmin

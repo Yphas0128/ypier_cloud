@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ypier-auth
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+        file-extension: yaml
+      discovery:
+        server-addr: ${nacos.addr}
+        namespace: ${nacos.namespace}
+
+nacos:
+  addr: 172.30.3.215:8848
+  namespace: 5f43f379-0525-4f53-b891-dc9cea575145
+
+
+
+
+
